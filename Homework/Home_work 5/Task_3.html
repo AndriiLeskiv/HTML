@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .sky-loader {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .clouds {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            margin-bottom: 20px;
+        }
+        .cloud {
+            width: 50px;
+            height: 30px;
+            background-color: #ecf0f1;
+            border-radius: 50%;
+            box-shadow: 20px 0 0 #ecf0f1, 40px 0 0 #ecf0f1;
+        }
+        .plane {
+            margin-top: 10px;
+            animation: fly-plane 4s linear infinite;
+        }
+        @keyframes fly-plane {
+            0% {
+                transform: translateX(-200px);
+            }
+            100% {
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="sky-loader">
+    <div class="clouds">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    </div>
+    <div class="plane">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" style="transform: rotate(90deg);">
+            <path d="M21 16v-2l-8-5V4.5c0-.28-.22-.5-.5-.5h-.99c-.28 0-.5.22-.5.5V9l-8 5v2l8-2v5l-2 1v1l3-.5 3 .5v-1l-2-1v-5l8 2z" fill="#3498db"/>
+        </svg>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #028b8b;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form_login{
+            width: 500px;
+            height: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .form_login h2{
+            text-align: center;
+            padding: 25px 0;
+            background-color: #e9f3f3;
+            border-radius: 10px 10px 0 0;
+            color: #333636;
+        }
+        .form_login form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        form>input{
+            width: 350px;
+            height: 25px;
+            margin: 12px 0;
+            padding: 5px;
+            border: 2px solid #a2a4a4;
+        }
+        form .remember_box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 360px;
+        }
+        form input[type="submit"]{
+            background-color: #e9f3f3;
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid #a2a4a4;
+        }
+    </style>
+</head>
+<body>
+<div class="form_login">
+    <h2>Вхід в особистий кабінет</h2>
+    <form>
+        <input type="text" placeholder="Логін або email" name="login">
+        <input type="password" placeholder="Пароль" name="password">
+        <div class="remember_box">
+            <label>
+                Запам'ятати мене
+                <input type="checkbox" name="remember">
+            </label>
+            <input type="submit" value="Вхід">
+        </div>
+    </form>
+</div>
+</body>
+</html>

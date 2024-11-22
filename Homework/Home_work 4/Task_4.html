@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, h2{
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      line-height: 54.46px;
+      font-size: 45px;
+      color: #000000;
+    }
+    header{
+      background-color: #8D8484;
+      height: 20vh;
+    }
+    main{
+      display: flex;
+      color: #FFFFFF;
+    }
+     .content_box section{
+       height: 20vh;
+       width: 73vw;
+     }
+    .content_box .content_box_first{
+      background-color: #776969;
+    }
+    .content_box .content_box_second{
+      background-color: #643030;
+    }
+    .content_box .content_box_third{
+      background-color: #441818;
+    }
+    .span_box section{
+     height: 30vh;
+     width: 27vw;
+    }
+    .span_box .span_box_first{
+      background-color: #937575;
+    }
+    .span_box .span_box_second{
+      background-color: #644C4C;
+    }
+    footer{
+      background-color: #BDBDBD;
+      height: 20vh;
+    }
+    .d-flex,
+    section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+<header class="d-flex">
+  <h2>Header</h2>
+</header>
+<main>
+  <div class="content_box">
+    <section class="content_box_first"><p>Content - 1</p></section>
+    <section class="content_box_second"><p>Content - 2</p></section>
+    <section class="content_box_third"><p>Content - 3</p></section>
+  </div>
+  <div class="span_box">
+    <section class="span_box_first"><p>spam -1</p></section>
+    <section class="span_box_second"><p>spam -2</p></section>
+  </div>
+</main>
+<footer class="d-flex"><h2>footer</h2></footer>
+</body>
+</html>

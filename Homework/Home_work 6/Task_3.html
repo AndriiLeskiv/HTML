@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 350px;
+            border: 3px solid #d8d8d8;
+            text-align: center;
+            padding: 25px 15px;
+        }
+        .login_container img{
+            padding: 30px 0;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        form input{
+            width: 270px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #a2a4a4;
+            padding: 0 5px;
+            margin: 5px 0;
+            text-overflow: ellipsis;
+        }
+        form input[type="submit"]{
+            background-color: #68b5fa;
+            color: #fff;
+            border: 1px solid #68b5fa;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 10px;
+            margin: 15px 0 22px;
+            width: 100%;
+        }
+        form input[type="submit"]:hover{
+            background-color: #fff;
+            color: #68b5fa;
+        }
+        form span{
+            color: #737373;
+            font-weight: 700;
+        }
+        .login_with_facebook{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 17px auto 20px;
+        }
+        .login_with_facebook a{
+            color: #375185;
+            font-weight: 700;
+        }
+        .reset_password{
+            color: #01386c;
+            font-weight: 600;
+        }
+        .registration_container{
+            border: 3px solid #d8d8d8;
+            margin-top: 10px;
+            padding: 20px 15px;
+        }
+        .registration_container a{
+            color: #0095f6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div class="form_container">
+    <div class="login_container">
+        <img src="img/instagram.png">
+        <form>
+            <input type="text" name="login" placeholder="Номер телефону, ім'я користувача або емейл">
+            <input type="password" name="password" placeholder="Пароль">
+            <input type="submit" value="Увійти">
+            <span>АБО</span>
+            <div class="login_with_facebook">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 300 280" enable-background="new 0 0 300 280" xml:space="preserve" style="width: 30px;">
+            <g>
+                <path fill="#FFFFFF" d="M227.44,209.15c0,3.9-3.16,7.07-7.07,7.07H79.63c-3.9,0-7.07-3.16-7.07-7.07V70.85
+                    c0-3.9,3.16-7.07,7.07-7.07h140.75c3.9,0,7.07,3.16,7.07,7.07V209.15z"/>
+                <g>
+                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="150" y1="64.5702" x2="150" y2="216.9941">
+                        <stop  offset="0" style="stop-color:#4D69A2"/>
+                        <stop  offset="1" style="stop-color:#3C5A99"/>
+                    </linearGradient>
+                    <path fill="url(#SVGID_1_)" d="M227.44,209.15V70.85c0-3.9-3.16-7.07-7.07-7.07h-12.6H92.23H79.63c-3.89,0-7.04,3.15-7.06,7.03
+                        v125.72l0,12.62c0.01,3.89,3.17,7.05,7.07,7.05h78.16v-61.19h-20.18v-21.08h20.18v-22.9c0-13.72,12.44-22.94,22.48-22.94h22.59
+                        v19.18h-10.42c-5.13,0-11.98,4.17-11.98,9.29v17.36h20.35v21.08h-20.35v61.19h27.31h12.6
+                        C224.28,216.21,227.44,213.05,227.44,209.15z"/>
+                    <path fill="#3D568E" d="M220.37,217.09h-40.8v-62.96h20.35v-19.32h-20.35v-18.24c0-5.48,7.07-10.18,12.86-10.18h9.53V88.98h-21.7
+                        c-9.02,0-21.6,8.39-21.6,22.06v23.78H138.5v19.32h20.18v62.96H79.63c-4.38,0-7.94-3.56-7.95-7.93l0-138.34
+                        c0.02-4.37,3.58-7.92,7.95-7.92h140.75c4.38,0,7.95,3.57,7.95,7.95v138.29C228.32,213.53,224.75,217.09,220.37,217.09z
+                         M181.34,215.33h39.03c3.41,0,6.18-2.77,6.18-6.18V70.85c0-3.41-2.77-6.18-6.18-6.18H79.63c-3.39,0-6.16,2.76-6.18,6.15l0,138.34
+                        c0,3.4,2.78,6.17,6.18,6.17h77.28V155.9h-20.17v-22.85h20.17v-22.01c0-13.63,12.34-23.82,23.36-23.82h23.47v20.95h-11.3
+                        c-4.89,0-11.1,3.96-11.1,8.41v16.48h20.34v22.85h-20.34V215.33z"/>
+                </g>
+            </g>
+        </svg>
+                <a href="https://facebook.com/">Увійти через Facebook</a>
+            </div>
+            <a href="#" class="reset_password">Забули пароль?</a>
+        </form>
+    </div>
+    <div class="registration_container">
+        <p>Не маєте облікового запису? <a href="#">Зареєструйся</a></p>
+    </div>
+</div>
+</body>
+</html>
